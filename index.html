@@ -9,6 +9,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form id="new-bird-form">
+        <div class="form-item">
+            <label for="bird-name">Bird Name:</label>
+            <input type="text" id="bird-name">
+        </div>
+        <div class="form-item">
+            <label for="bird-type">Type o' Bird:</label>
+            <select name="bird-type" id="bird-type">
+                <option value="" disabled selected>Pick Your Type</option>
+                <option value="parrot">Parrot</option>
+                <option value="gull">Gull</option>
+                <option value="penguin">Penguin</option>
+                <option value="penguin">Little Fellas</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="bird-status">Endangered Status:</label>
+            <select name="bird-status" id="bird-status">
+                <option value="" disabled selected>Pick Status</option>
+                <option value="thiriving">Thriving</option>
+                <option value="vulnerable">Vulnerable</option>
+                <option value="endangered">Endangered</option>
+                <option value="extinct">Extinct</option>
+            </select>
+        </div>
+
+    </form>
+    <button id="delete-all">Delete All</button>
+
+    <h1>Native Birds</h1>
+    <ul id="native-bird"></ul>
 </body>
 </html>
