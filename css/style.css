@@ -13,7 +13,10 @@ body {
 
 .form-item input, .form-item select{
     border: none;
+    font-family: 'Yatra One', cursive;
+    margin: 10px;
 }
+
 
 #bird-list {
     display: flex;
@@ -25,8 +28,12 @@ body {
     background-color: #4CAF50;
     border: none;
     padding: 15px 32px;
+    width: 20%;
+    height: 55px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Yatra One', cursive;
+    font-size: 20px;
 }
 
