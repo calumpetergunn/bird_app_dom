@@ -5,40 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
     <script src="js/app.js"></script>
     <title>Document</title>
 </head>
 <body>
     <form id="new-bird-form">
-        <div class="form-item">
-            <label for="name">Bird Name:</label>
-            <input type="text" id="name">
+        <div id='form-wrapper'>
+            <div class="form-item">
+                <label for="name">Bird Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-item">
+                <label for="species">Type o' Bird:</label>
+                <select name="species" id="species">
+                    <option value="" disabled selected>Pick Your Type</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="gull">Gull</option>
+                    <option value="penguin">Penguin</option>
+                    <option value="penguin">Little Fellas</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="status">Endangered Status:</label>
+                <select name="status" id="status">
+                    <option value="" disabled selected>Pick Status</option>
+                    <option value="thiriving">Thriving</option>
+                    <option value="vulnerable">Vulnerable</option>
+                    <option value="endangered">Endangered</option>
+                    <option value="extinct">Extinct</option>
+                </select>
+            </div>
+        <input type="submit" id='submit'>
         </div>
-        <div class="form-item">
-            <label for="species">Type o' Bird:</label>
-            <select name="species" id="species">
-                <option value="" disabled selected>Pick Your Type</option>
-                <option value="parrot">Parrot</option>
-                <option value="gull">Gull</option>
-                <option value="penguin">Penguin</option>
-                <option value="penguin">Little Fellas</option>
-            </select>
-        </div>
-        <div class="form-item">
-            <label for="status">Endangered Status:</label>
-            <select name="status" id="status">
-                <option value="" disabled selected>Pick Status</option>
-                <option value="thiriving">Thriving</option>
-                <option value="vulnerable">Vulnerable</option>
-                <option value="endangered">Endangered</option>
-                <option value="extinct">Extinct</option>
-            </select>
-        </div>
-        <input type="submit">
     </form>
-    <button id="delete-all">Delete All</button>
+    
 
     <h1>Native Birds</h1>
     <ul id="native-bird"></ul>
+
+    <button id="delete-all">Delete All</button>
 </body>
 </html>
